@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Navbar = styled.nav`
   position: fixed;
-  left: auto;
+  left: 0;
   width: 100%;
   background: rgb(7, 12, 23);
-  max-width: 1280px;
+  max-width: 100vw;
   color: #fff;
   z-index: 100;
 `;
