@@ -47,3 +47,11 @@ export const TimeLineData = [
   { year: 2020, text: 'Learned Mobile and Web Development' },
   { year: 2021, text: 'Worked as a freelance developer' },
 ];
+
+export const LINKS = {
+  linkedin: 'https://www.linkedin.com/in/ignacio-d%C3%ADaz/',
+  github: 'https://github.com/DiazIgnacio',
+  email: 'diaz.ignacio023@gmail.com',
+};
+
+export const PHONE_NUMBER = '3416962877';

@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { LINKS, PHONE_NUMBER } from '../../constants/constants';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import {
@@ -18,26 +19,29 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
+        {/* Phone Number */}
         <LinkColumn>
           <LinkTitle>Call Me</LinkTitle>
-          <LinkItem href='tel:3416962877'>+54 9 341-696-2877</LinkItem>
+          <LinkItem href={`tel:${PHONE_NUMBER}`}>+54 9{PHONE_NUMBER}</LinkItem>
         </LinkColumn>
+        {/* Email */}
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href='mailto:diaz.ignacio023@gmail.com'>
-            diaz.ignacio023@gmail.com
-          </LinkItem>
+          <LinkItem href={`mailto:${LINKS.email}`}>{LINKS.email}</LinkItem>
         </LinkColumn>
       </LinkList>
+      {/* Social media */}
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>Innovating one project at a time</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href='https://github.com/DiazIgnacio'>
+          {/* Github */}
+          <SocialIcons href={LINKS.github}>
             <AiFillGithub size='3rem' />
           </SocialIcons>
-          <SocialIcons href='https://www.linkedin.com/in/ignacio-d%C3%ADaz/'>
+          {/* Linkedin */}
+          <SocialIcons href={LINKS.linkedin}>
             <AiFillLinkedin size='3rem' />
           </SocialIcons>
         </SocialContainer>
