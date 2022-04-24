@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { LINKS, PHONE_NUMBER } from '../../constants/constants';
 
 import { SocialIcons } from '../Header/HeaderStyles';
@@ -22,7 +22,7 @@ const Footer = () => {
         {/* Phone Number */}
         <LinkColumn>
           <LinkTitle>Call Me</LinkTitle>
-          <LinkItem href={`tel:${PHONE_NUMBER}`}>+54 9{PHONE_NUMBER}</LinkItem>
+          <LinkItem href={`tel:${PHONE_NUMBER}`}>+54 9 {PHONE_NUMBER}</LinkItem>
         </LinkColumn>
         {/* Email */}
         <LinkColumn>

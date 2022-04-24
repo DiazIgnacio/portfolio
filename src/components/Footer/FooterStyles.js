@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.section`
-  width: 80vw;
   max-width: 1040px;
   padding: 2rem 48px 40px;
-  margin: 1rem auto;
   box-sizing: content-box;
 
   @media ${({ theme }) => theme.breakpoints.sm} {

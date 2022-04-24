@@ -20,7 +20,8 @@ const Hero = () => (
       </SectionText>
       <Button
         onClick={() =>
-          (window.location = 'https://www.linkedin.com/in/ignacio-d%C3%ADaz/')
+          (window.open =
+            ('https://www.linkedin.com/in/ignacio-d%C3%ADaz/', '_blank'))
         }
       >
         Learn More
